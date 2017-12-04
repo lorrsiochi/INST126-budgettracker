@@ -11,6 +11,9 @@ import csv
 
 print("Welcome to your personal budget tracker!")
 
+# Creating and opening CSV: with open('user_data.csv', 'w', newline='') as ud:
+# a = csv.writer(ud, delimeter=',')
+
 first_name = input("Enter first name: ")
 last_name = input("Enter last name: ")
 
