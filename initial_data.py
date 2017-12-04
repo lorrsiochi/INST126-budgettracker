@@ -4,15 +4,14 @@
     16 December 2017
 """
 
-# This program will receive the initial data to create a budget tracker.
+#This program will receive the initial data to create a budget tracker.
 
 import pandas as pd
 import csv
 
-print("Welcome to your personal budget tracker!")
+print("Welcome to your personal budget tracker!/n")
+print("The following information is required for initial data.")
 
-# Creating and opening CSV: with open('user_data.csv', 'w', newline='') as ud:
-# a = csv.writer(ud, delimeter=',')
 
 first_name = input("Enter first name: ")
 last_name = input("Enter last name: ")
@@ -33,4 +32,3 @@ while bill_num > 0:
     bill_date = input("When do you pay this bill (MM/DD): ")
     bill_num -= bill_num
     
-# Exporting data into CSV: a.writerows(namehere)
