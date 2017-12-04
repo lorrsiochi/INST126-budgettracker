@@ -20,10 +20,12 @@ while income_num > 0:
     income_amt = input("How much do you make per month with this income?: ")
     income_num -= income_num
 
-bill_str = input("How many bills do you pay per month?")
+bill_str = input("How many bills do you pay per month?: ")
 bill_num = int(bill_str)
 while bill_num > 0:
     bill_name = input("Enter the name of the bill: ")
     bill_amt = input("How much do owe for this bill?: ")
+    bill_occur = input("How often does this bill occur (in days): ")
+    bill_date = input("When do you pay this bill (MM/DD): ")
     bill_num -= bill_num
     
