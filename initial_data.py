@@ -15,8 +15,15 @@ last_name = input("Enter last name: ")
 
 income_str = input("How many incomes do you have?")
 income_num = int(income_str)
-
 while income_num > 0:
     income_name = input("Enter the name of the income source: ")
     income_amt = input("How much do you make per month with this income?: ")
     income_num -= income_num
+
+bill_str = input("How many bills do you pay per month?")
+bill_num = int(bill_str)
+while bill_num > 0:
+    bill_name = input("Enter the name of the bill: ")
+    bill_amt = input("How much do owe for this bill?: ")
+    bill_num -= bill_num
+    
