@@ -7,6 +7,7 @@
 #This program will receive the initial data to create a budget tracker.
 
 import pandas as pd
+import csv
 
 print("Welcome to your personal budget tracker!")
 
