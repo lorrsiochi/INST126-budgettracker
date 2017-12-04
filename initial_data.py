@@ -4,7 +4,7 @@
     16 December 2017
 """
 
-#This program will receive the initial data to create a budget tracker.
+# This program will receive the initial data to create a budget tracker.
 
 import pandas as pd
 import csv
