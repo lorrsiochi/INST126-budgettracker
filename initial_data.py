@@ -33,3 +33,4 @@ while bill_num > 0:
     bill_date = input("When do you pay this bill (MM/DD): ")
     bill_num -= bill_num
     
+# Exporting data into CSV: a.writerows(namehere)
