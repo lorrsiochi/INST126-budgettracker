@@ -16,19 +16,17 @@ print("The following information is required for initial data.")
 first_name = input("Enter first name: ")
 last_name = input("Enter last name: ")
 
-income_str = input("How many incomes do you have?")
-income_num = int(income_str)
-while income_num > 0:
+num_income = int(input("How many incomes do you have?"))
+while num_income > 0:
     income_name = input("Enter the name of the income source: ")
-    income_amt = input("How much do you make per month with this income?: ")
-    income_num -= income_num
+    income_amt = float(input("How much do you make per month with this income?: "))
+    num_income -= num_income
 
-bill_str = input("How many bills do you pay per month?: ")
-bill_num = int(bill_str)
-while bill_num > 0:
+num_bill = int(input("How many bills do you pay per month?: "))
+while num_bill > 0:
     bill_name = input("Enter the name of the bill: ")
-    bill_amt = input("How much do owe for this bill?: ")
-    bill_occur = input("How often does this bill occur (in days): ")
+    bill_amt = float(input("How much do owe for this bill?: "))
+    bill_occur = int(input("How often does this bill occur (in days): "))
     bill_date = input("When do you pay this bill (MM/DD): ")
-    bill_num -= bill_num
+    num_bill -= num_bill
     
