@@ -21,8 +21,7 @@ print("3 = Add Revenue")
 print("4 = Remove revenue")
 print("5 = Exit")
 
-choice_str = input("Enter selection: ")
-choice_int = int(choice_str)
+choice_str = int(input("Enter selection: "))
 
 #maybe for each of the items, create definitions (see below)
 if choice_int == 1:
@@ -45,5 +44,5 @@ else:
 
 
 def add_expense(total_budget):
-    amt_str = input("How much did you spend?: $")
-    amt_flt = float(amt_str)
+    amt = float(input("How much did you spend?: $"))
+
