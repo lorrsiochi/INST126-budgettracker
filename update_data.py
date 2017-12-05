@@ -12,6 +12,8 @@
 first_name = ("Enter your first name: ")
 last_name = ("Enter your last name: ")
 
+total_budget = print("Your total budget is: ") #get total budget from initial data csv file
+
 print("Menu Selection")
 print("1 = Add expense")
 print("2 = Remove expense")
@@ -22,11 +24,13 @@ print("5 = Exit")
 choice_str = input("Enter selection: ")
 choice_int = int(choice_str)
 
+#maybe for each of the items, create definitions (see below)
 if choice_int == 1:
     """
         ask for amount of expense
         ask for category (possibly display the suggested categories)
         date of expense
+        ask for menu again
     """
 elif choice_int == 2:
 
@@ -38,3 +42,8 @@ elif choice_int == 5:
     print("Goodbye!")
 else:
     print("That is not a valid choice. Please enter a number 1-5")
+
+
+def add_expense(total_budget):
+    amt_str = input("How much did you spend?: $")
+    amt_flt = float(amt_str)
