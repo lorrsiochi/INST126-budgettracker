@@ -30,3 +30,6 @@ while num_bill > 0:
     bill_date = input("When do you pay this bill (MM/DD): ")
     num_bill -= num_bill
     
+"""
+    Need to import all this data into a csv file per person!!
+"""
