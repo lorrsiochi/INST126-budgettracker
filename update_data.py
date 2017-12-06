@@ -8,7 +8,8 @@
     total budget
 """
     
-
+import pandas as pd
+    
 first_name = ("Enter your first name: ")
 last_name = ("Enter your last name: ")
 
