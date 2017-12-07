@@ -34,9 +34,7 @@ df = pd.DataFrame({"First Name": list_first_name,
 )
 
 def income():
-
     num_income = input("How many incomes do you have?: ")
-    
     if num_income.isdigit() == True:
         num_income = int(num_income)
         
@@ -47,12 +45,10 @@ def income():
             print()
             num_income -= 1
             
-
         for name in list_income_name:
             counter = 1
             df['Income ' + str(counter) + " Name"] = name
             counter += 1
-
     else:
         print("Uh oh, that was not a vaild entry. Please try again.")
         income()
