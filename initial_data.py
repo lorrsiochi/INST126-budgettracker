@@ -1,11 +1,3 @@
-"""
-    Lorraine Siochi, Emi Vo, Grace Zhang
-    INST126 Personal Budget Tracker
-    16 December 2017
-"""
-
-#This program will receive the initial data to create a budget tracker.
-
 import pandas as pd
 import csv
 
@@ -14,8 +6,6 @@ print("The following information is required for initial data.")
 
 list_first_name = []
 list_last_name = []
-list_income_name = []
-list_num_income = []
 list_income_amt = []
 list_num_bill = []
 list_bill_name = []
@@ -23,35 +13,21 @@ list_bill_amt = []
 list_bill_occur = []
 list_bill_date = []
 
-
-df = pd.DataFrame({"First Name": list_first_name,
-    "Last Name":list_last_name,
-    "Income Name":list_income_name,
-    "Income Amt":list_income_amt,
-    """Bill Name":list_bill_name,
-    "Bill Amount":list_bill_amt,
-                 """}
-)
+#Trying to create eh dataframe
 
 def income():
-    num_income = input("How many incomes do you have?: ")
-    if num_income.isdigit() == True:
-        num_income = int(num_income)
-        
-        while num_income > 0:
-            income_name = input("Enter the name of the income source: ")
-            list_income_name.append(income_name)
-            income_amt = float(input("How much do you make per month with this income?: $"))
-            print()
-            num_income -= 1
+    income_amt = input("How much revenue to receive each month?: $")
+    
+    if income_amt.isdigit() == True:
+        print("Thank you!")
+        income_amt = float(income_amt)
+        list_income_amt.append(income_amt)
             
-        for name in list_income_name:
-            counter = 1
-            df['Income ' + str(counter) + " Name"] = name
-            counter += 1
     else:
         print("Uh oh, that was not a vaild entry. Please try again.")
         income()
+
+        
 
 first_name = input("Enter first name: ")
 last_name = input("Enter last name: ")
@@ -61,6 +37,17 @@ list_last_name.append(last_name.title())
 
 print("\nHello "+ first_name.title() + " " + last_name.title() + "!")
 income()
+
+print(list_first_name)
+print(list_last_name)
+print(list_income_amt)
+    
+df = pd.DataFrame
+(
+    {"First Name": list_first_name,
+    "Last Name": list_last_name,
+    "Income Amt":list_income_amt}
+)
 
 
 num_bill = int(input("How many bills do you pay per month?: "))
