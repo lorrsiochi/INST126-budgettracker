@@ -45,9 +45,8 @@ df['Last Name'] = list_last_name
 print("\nHello "+ first_name.title() + " " + last_name.title() + "!")
 income()
 
-
 num_bill = int(input("How many bills do you pay per month?: "))
-
+bill_name = ''
 while num_bill > 0:
     bill_name = input("Enter the name of the bill: ")
     list_bill_name.append(bill_name)
@@ -57,14 +56,15 @@ while num_bill > 0:
     
 print(list_bill_name)
 print(list_bill_amt)
-    
+counter = 0
+
 for name in list_bill_name:
-    counter = 0
     column = 'Bill Name '+ str(counter + 1)
     df[column] = name
     counter += 1
-    
+
+counter = 0
 for amt in list_bill_amt:
-    counter = 0
-    df['Bill ' + str(counter + 1) + 'Amt'] = amt
+    df['Bill ' + str(counter + 1) + ' Amt'] = amt
     counter += 1
+
