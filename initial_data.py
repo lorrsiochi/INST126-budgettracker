@@ -32,8 +32,7 @@ def income():
         print("Uh oh, that was not a vaild entry. Please try again.")
         income()
 
-        #Asks for name and amount for each bill
-
+#Asks for name and amount for each bill
 def bill_data():
     income_amt = df['Income Amount']
     num_bill = input("How many bills do you pay per month? (ex. 4): ")
