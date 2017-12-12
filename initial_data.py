@@ -68,3 +68,55 @@ for amt in list_bill_amt:
     df['Bill ' + str(counter + 1) + ' Amt'] = amt
     counter += 1
 
+    
+def menu():
+    print("Menu Selection")
+    print("1 = Add expense")
+    print("2 = Add Revenue")
+    print("3 = Remove Revenue")
+    print("4 = Exit")
+
+    choice = int(input("Enter selection: "))
+    if choice == 1:
+        add_exp_amt = float(input("Please enter how much you spent (ex. 12.54): $"))
+        menu_opt()
+    elif choice == 2:
+        add_rev_amt = input("Please enter how much revenue you received (ex. 12.54): $")
+        menu_opt()
+    elif choice == 3:
+        expense_amt = input("Please enter how much revenue you are removing (ex. 12.54): $")
+        menu_opt()
+    elif choice == 4:
+        print("Thank you! See you next time.")
+    else:
+        print("That is not a valid choice. Please enter a number 1-5")
+        choice = int(input("Enter selection: "))
+
+def menu_opt():
+    option = input("Would you like to go back to the menu? (Y or N): ")
+    
+    if option.lower() == 'y':
+        menu()  
+    elif opt.lower() == 'n':
+        print("Thank you! See you next time.")
+    else:
+        print("I'm sorry. Please enter a valid option.")
+        menu_opt()
+
+menu()
+
+if choice == 1:
+    add_exp_amt = float(input("Please enter how much you spent (ex. 12.54): $"))
+    menu_opt()
+elif choice == 2:
+    add_rev_amt = input("Please enter how much revenue you received (ex. 12.54): $")
+    menu_opt()
+elif choice == 3:
+    expense_amt = input("Please enter how much revenue you are removing (ex. 12.54): $")
+    menu_opt()
+elif choice == 4:
+    print("Thank you! See you next time.")
+else:
+    print("That is not a valid choice. Please enter a number 1-5")
+    choice = int(input("Enter selection: "))
+    menu()
