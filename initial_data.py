@@ -106,7 +106,7 @@ def menu():
     elif choice == 2:
         add_rev_amt = input("Please enter how much revenue you received (ex. 12.54): $")
         if add_rev_amt.isdigit() == True:
-            add_rem_amt = float(add_rem_amt)
+            add_rev_amt = float(add_rev_amt)
             list_add_budget.append(add_rev_amt)
             menu_opt()
         else:
@@ -186,3 +186,5 @@ df['Expenses'] = sum(list_expenses)
 df['Total Budget'] = df['Total Budget'] + sum(list_add_budget) - sum(list_rem_budget)
 total_budget =df.get_value(0, 'Total Budget', takeable=False)
 print('Your total budget is set at: $' + str(total_budget))
+
+print(df)
